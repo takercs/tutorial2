@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static1", "static_root")
+STATIC_ROOT = 'https://github.com/takercs/tutorial2/tree/master/static0/local_static'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static0", "local_static"),
@@ -136,7 +136,7 @@ STATICFILES_DIRS = [
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT =  os.path.join(os.path.dirname(BASE_DIR), "static1", "media_root")
+MEDIA_ROOT =  'https://github.com/takercs/tutorial2/tree/master/static0/local_static'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
