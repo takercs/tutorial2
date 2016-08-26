@@ -136,7 +136,7 @@ STATICFILES_DIRS = [
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT =  'https://github.com/takercs/tutorial2/tree/master/static0/local_static'
+MEDIA_ROOT =  'https://github.com/takercs/tutorial2/tree/master/static0/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
