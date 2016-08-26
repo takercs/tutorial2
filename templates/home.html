@@ -28,7 +28,7 @@
 
 <div class='col-sm-6'>
 <h1>Testing Initiative</h1>
-<p>Great work! Because this message is prerecorded, any observations related to your performance are speculation on our part. Please disregard any undeserved compliments.</p>
+<p class='lead'>Great work! Because this message is prerecorded, any observations related to your performance are speculation on our part. Please disregard any undeserved compliments.</p>
 </div>
 
     <div class='col-sm-6'>
@@ -53,7 +53,7 @@
 <h1>Logged in</h1>
 
 {% if queryset %}
-<h2>staff {{ request.user.is_staff }}</h2>
+<h2>staff {{ request.user.is_staff }} <a href="{% url 'auth_logout' %}">Log out</a></h2>
 <table class='table'>
 {% for instance in queryset %}
     <tr><td>{{ forloop.counter }}</td><td>{{ instance }}</td><td>{{ instance.full_name }}</td><td>{{ instance.timestamp|timesince }} ago</td></tr>
