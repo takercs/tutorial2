@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <h1>Our Work</h1>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <h3>Software</h3>
+        <img src='{% static "img/software.png" %}' class='img-responsive' />
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <h3>Games</h3>
+        <img src='{% static "img/ascii.png" %}' class='img-responsive' />
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <h3>Electrical schematics</h3>
+        <img src='{% static "img/schematic.png" %}' class='img-responsive' />
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <h3>Drawings</h3>
+        <img src='{% static "img/draw1.png" %}' class='img-responsive' />
+        <hr>
+    </div>
+</div>
+
+{% endblock %}
