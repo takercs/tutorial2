@@ -36,7 +36,7 @@ def home(request):
         #    instance.full_name == "12345"
         instance.save()
         context = {
-            "title": "done",
+            "title": "Done",
         }
         #print(instance.email)
         #print(instance.full_name)
