@@ -11,7 +11,7 @@ from .models import SignUp
 # Create your views here.
 
 def home(request):
-    title = "Sign up for excessive spam"
+    title = "Enter your name and email to receive updates"
     if request.user.is_authenticated():
         title = "101 %s" %(request.user)
 

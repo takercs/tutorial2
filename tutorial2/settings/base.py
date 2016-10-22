@@ -134,10 +134,6 @@ STATICFILES_DIRS = [
     #'/var/www/static/',
 ]
 
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT =  'https://github.com/takercs/tutorial2/tree/master/static0/local_static'
-
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 ACCOUNT_ACTIVATION_DAYS = 7
