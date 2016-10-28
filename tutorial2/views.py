@@ -9,3 +9,7 @@ def about(request):
 def work(request):
 
     return render(request,"work.html",{})
+
+def cover(request):
+
+    return render(request,"cover.html",{})

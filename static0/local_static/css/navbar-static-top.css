@@ -10,11 +10,15 @@ body {
 }
 
 .navbar-default .navbar-brand {
-    color: white;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
 .navbar-default .navbar-brand:hover {
-    color: green;
+    color: #3498db;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
 .navbar-default .navbar-nav>li>a {

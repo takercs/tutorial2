@@ -20,11 +20,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import include
 
+from tutorial2 import views as tutorial2_views
+from newsletter import views as newsletter_views
+
 urlpatterns = [
-    url(r'^$', 'newsletter.views.home', name='home'),
-    url(r'^contact/', 'newsletter.views.contact', name='contact'),
-    url(r'^about/', 'tutorial2.views.about', name='about'),
-    url(r'^work/', 'tutorial2.views.work', name='work'),
+    url(r'^$', tutorial2_views.cover, name='cover'),
+    url(r'^contact/', newsletter_views.contact, name='contact'),
+    url(r'^home/', newsletter_views.home, name='home'),
+    url(r'^about/', tutorial2_views.about, name='about'),
+    url(r'^work/', tutorial2_views.work, name='work'),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('registration.backends.default.urls')),
 ]

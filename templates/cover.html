@@ -1,0 +1,71 @@
+{% if request.user.is_authenticated %}
+<!--<meta http-equiv="refresh" content="0; url={% url 'home' %}" />-->
+{% endif %}
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'img/A.png' %}">
+
+    <title>Testing Initiative</title>
+
+    {% include 'head_css.html' %}
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body style="background-image: url('{% static "img/hg.jpg" %}'); background-position: center top;">
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <!--<h3 class="masthead-brand">Testing Initiative</h3>-->
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Testing Initiative</h1>
+            <p class="lead">The best site you have ever visited.</p>
+            <p class="lead">
+              <a href="{% url 'about' %}" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+                <center>
+                    Follow and contact us at
+                    <a href="#"><i class="fa fa-twitter-square fa-1x" aria-hidden="true"></i></a>   <a href="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a>   <a href="{% url 'contact' %}"><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i></a></br>
+                    Testing Initiative <i class="fa fa-copyright" aria-hidden="true"></i> 2016
+                </center>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include 'javascript.html' %}
+
+</body></html>

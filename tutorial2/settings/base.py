@@ -25,7 +25,7 @@ SECRET_KEY = '0#826v!al)p$82@xq5qe&+jm+3pzyk*unr6b=d8v)bhkwvl05l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -126,7 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'https://github.com/takercs/tutorial2/tree/master/static0/local_static'
+#STATIC_ROOT = 'https://github.com/takercs/tutorial2/tree/master/static0/local_static'
+STATIC_ROOT = os.path.join(BASE_DIR, "static1", "local_static"),
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static0", "local_static"),
