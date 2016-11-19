@@ -13,3 +13,7 @@ def work(request):
 def cover(request):
 
     return render(request,"cover.html",{})
+
+def dark(request):
+
+    return render(request,"homeblack.html",{})

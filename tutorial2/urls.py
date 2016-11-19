@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^home/', newsletter_views.home, name='home'),
     url(r'^about/', tutorial2_views.about, name='about'),
     url(r'^work/', tutorial2_views.work, name='work'),
+    url(r'^dark/', tutorial2_views.dark, name='dark'),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('registration.backends.default.urls')),
 ]
