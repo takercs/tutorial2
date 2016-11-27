@@ -10,9 +10,21 @@
 {% block style %}
     .navbar-static-top{
         margin-bottom: 0px !important;
+        background-color: #1f1f1f;
+        border-color: #aaaaaa;
     }
-    .body{
-        background-color: #ffffff;
+    .navbar-default .navbar-nav>li>a {
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .navbar-default .navbar-brand {
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .bodybg{
+        background-color: #111111;
+        color: #eeeeee;
     }
 {% endblock %}
 </style>
@@ -38,30 +50,21 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
-euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi
-leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
- cursus magna.</p>
+          <img class="img-circle" src='{% static "img/im.png" %}' alt="Generic placeholder image" width="140" height="140">
+          <h2>Iron Man</h2>
+          <p>An American billionaire playboy, business magnate, and ingenious engineer, Tony Stark suffers a severe chest injury during a kidnapping in which his captors attempt to force him to build a weapon of mass destruction. He instead creates a powered suit of armor to save his life and escape captivity. Later, Stark augments his suit with weapons and other technological devices he designed through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man, while at first concealing his true identity.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor
-ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus
-sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-mauris condimentum nibh.</p>
+          <img class="img-circle" src='{% static "img/cs.jpg" %}' alt="Generic placeholder image" width="140" height="140">
+          <h2>Counter-Strike</h2>
+          <p>In 1999 Counter-Strike was released as a mod for Half-Life. As Counter-Strike progressed from a beta to a full release, it refined the classic gameplay that has come to define competitive shooters and produced a dedicated community that has followed the game for over a decade.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
- ut fermentum massa justo sit amet risus.</p>
+          <img class="img-circle" src='{% static "img/fool.jpg" %}' alt="Generic placeholder image" width="140" height="140">
+          <h2>The A-Team</h2>
+          <p>In 1972, a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem, if no one else can help, and if you can find them, maybe you can hire... the A-Team.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -87,15 +90,12 @@ tellus ac cursus commodo.</p>
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor
-fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-tellus ac cursus commodo.</p>
+        <div class="col-md-5 col-md-push-7">
+          <h2 class="featurette-heading">Chapter one:</br><span class="text-muted">The Wolf</span></h2>
+          <p class="lead">As she went deeper and deeper into the forest it got darker and darker, when suddenly a cold shiver went through her spine. Someone or something was watching her, lingering in the dark and menacing shadows. Red stopped to look around but, it was too dark to see anything; the tall trees were blocking the sunlight almost completely. Her hands and legs started to shake, cold sweat dripping from her face, panic started to set in.</p>
         </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1ODVmNmZlZmUwIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU4NWY2ZmVmZTAiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg3IiB5PSIyNjEuNyI+NTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+        <div class="col-md-7 col-md-pull-5">
+          <img class="featurette-image img-responsive center-block" alt="500x500" src='{% static "img/draw4.png" %}' data-holder-rendered="true">
         </div>
       </div>
 
